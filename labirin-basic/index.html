@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Labirinto</title>
+  <head>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="illuminate-maze">
+      <div>
+        <script src="assets/js/mapa.js"></script>
+        <script src="assets/js/script.js"></script>
+      </div>
+      <div style="margin-top: 1%">
+        <button
+          style="float: right"
+          onclick="window.open('./scoreboard.html','_blank')"
+        >
+          Scoreboard
+        </button>
+        <div id="timerContainer">
+          <span id="timer">00:00:000</span>
+        </div>
+        <div id="formContainer" class="hidden">
+          <p>
+            Congratulations You Finished the Maze! Submit Your Name to
+            Leaderboard!
+          </p>
+          <form id="scoreForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required />
+            <input type="hidden" id="time" name="time" />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/scores.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+table,
+th,
+td {
+  border: 1px solid black;
+}
+head,
+body {
+  width: 50%;
+  margin: auto;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
